@@ -1,0 +1,26 @@
+{
+  "name": "dronoscope-cms",
+  "version": "1.0.0",
+  "description": "django cms project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hermelen/django-cms-dronoscope.git"
+  },
+  "keywords": [
+    "django",
+    "cms"
+  ],
+  "author": "hermelen peris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hermelen/django-cms-dronoscope/issues"
+  },
+  "homepage": "https://github.com/hermelen/django-cms-dronoscope#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0"
+  }
+}
