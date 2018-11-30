@@ -1,11 +1,36 @@
 {% extends "base.html" %}
 {% load cms_tags %}
+{% load static %}
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
 {% block content %}
 <section class="services">
-  <h1>{% page_attribute "page_title" %}</h1>
+  <h2>{% page_attribute "page_title" %}</h2>
+  <span class="interline">XXX</span>
+  <h3>Une alchimie complète pour un pilote en or!</h3>
+  <ul>
+    <li>
+      <img src="{% static 'img/rochefort.jpg' %}" alt="">
+      <h4>Photographie, Vidéo et Réalisation de clip promotionnel.</h4>
+      <p>Que cela soit pour un événement, un gîte, un reportage ou tout autre œuvre, la vue du ciel reste indéniablement le meilleur moyen de magnifier un paysage. Le Dronoscope vous propose une solution complète allant de la prise de vidéo et de photos sur le terrain à la création de votre clip vidéo personnalisé pour vous offrir le meilleur rendu visuel possible qui saura faire vibrer votre clientèle !</p>
+    </li>
+    <li>
+      <img src="{% static 'img/aqueducdd-2.jpg' %}" alt="">
+      <h4>Modélisation 3D et Orthophotographie</h4>
+      <p>Avec un drone il est possible d’obtenir un rendu 3D haute définition de n’importe quel élément (bâtiment, zone topographique, relief …) afin de mener diverses études à posteriori comme par exemple la simulation d’ensoleillement en urbanisme, l’analyse de déformation des surfaces en génie civil, le calcul de cubature pour les chantiers, ou encore en modèle de présentation virtuel pour l’immobilier…</p>
+    </li>
+    <li>
+      <img src="{% static 'img/barrage.jpg' %}" alt="">
+      <h4>Analyse visuelle des désordres sur barrages hydrauliques</h4>
+      <p>Plus besoin d’envoyer des équipes de techniciens sur place ! Le Dronoscope se charge d’inspecter et de rédiger le rapport d’analyse visuelle des désordres des ouvrages bétonnés en classifiant et géolocalisant les diverses anomalies sur un modèle 3D fournit avec le rapport final.</p>
+    </li>
+    <li>
+      <img src="{% static 'img/photo-07-big1.jpg' %}" alt="">
+      <h4>Inspection par drone</h4>
+      <p>Contrôle de maintenance, constat après un sinistre, état des lieux… le drone peut inspecter les endroits les plus inaccessibles en minimisant les risques humains. De plus, l’usage d’un drone apporte une grande précision d’analyse afin de visualiser les défauts en temps réel et d’ériger des rapports détaillés de l’état des zones diagnostiquées (toitures, éoliennes, ponts…) dans un temps réduit.</p>
+    </li>
+  </ul>
   {% placeholder "content" %}
 </section>
 {% endblock content %}
