@@ -176,7 +176,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  li {
+  >li {
     padding: 1em;
     a {
       color: rgb(56, 56, 56);
@@ -184,6 +184,9 @@ body {
       font-family: 'Fjalla One', sans-serif;
       text-transform: uppercase;
       text-decoration: none;
+    }
+    >ul {
+      display: none;
     }
   }
 }
@@ -193,9 +196,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1em 5em;
   h1, h2, h3, h4 {
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
+  }
+  h2 {
+    font-size: 5em;
   }
   span.interline {
     position: relative;
@@ -272,17 +279,71 @@ section.presentation {
         background-color: #383A3C;
       }
       p {
-        text-align:justify
+        text-align:justify;
       }
     }
   }
 }
 
 section.services {
-
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    li {
+      margin: 1em 0;
+      display: flex;
+      img {
+        border: 3px solid white;
+        width: 33%;
+      }
+      div {
+        padding: 1em;
+        width: 67%;
+      }
+    }
+  }
 }
 
 section.portfolio {
+  padding: 1em 10em;
+  ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin: 1em;
+      padding: 0.5rem;
+      border-radius: 2px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 15em;
+      }
+      i {
+        background: white;
+        border-radius: 50%;
+        padding: 1em;
+        margin-top: -10px;
+      }
+      h4 {
+        margin-top: 0px;
+        font-size: 0.75em;
+        text-transform: uppercase;
+      }
+    }
+    li:hover {
+      i {
+        margin-top: -15px;
+      }
+      h4 {
+        margin-top: 5px;
+      }
+    }
+  }
 
 }
 

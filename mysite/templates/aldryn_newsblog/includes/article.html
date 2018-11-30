@@ -1,0 +1,25 @@
+{% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+{% if CMS_TEMPLATE == 'presentation.html' %}
+<li>
+  <img src="{% thumbnail article.featured_image 800x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}">
+  <h4>{% render_model article "title" %}</h4>
+  <h5>{% render_model article "meta_title" %}</h5>
+  <hr class="sub-h5">
+  <hr>
+  <p>{% render_model article "lead_in" %}</p>
+</li>
+{% elif CMS_TEMPLATE == 'services.html' %}
+<li>
+  <img src="{% thumbnail article.featured_image 800x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}">
+  <div>
+    <h4>{% render_model article "title" %}</h4>
+    <p>{% render_model article "lead_in" %}</p>
+  </div>
+</li>
+{% elif CMS_TEMPLATE == 'portfolio.html' %}
+<li>
+  <img src="{% thumbnail article.featured_image 800x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}">
+  <i class="fas fa-tv"></i>
+  <h4>{% render_model article "title" %}</h4>
+</li>
+{% endif %}

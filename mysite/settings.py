@@ -141,7 +141,18 @@ INSTALLED_APPS = (
     'djangocms_video',
     'mysite',
 
-    'aldryn_bootstrap3'
+    'aldryn_bootstrap3',
+
+    # you will probably need to add these
+    'aldryn_apphooks_config',
+    'aldryn_categories',
+    'aldryn_common',
+    'aldryn_newsblog',
+    'aldryn_people',
+    'aldryn_translation_tools',
+    'parler',
+    'sortedm2m',
+    'taggit',
 )
 
 LANGUAGES = (
